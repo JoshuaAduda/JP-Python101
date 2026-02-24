@@ -31,13 +31,35 @@ number=100000000000
 output=number
 
 # #Numbers: FLOAT ->float()
-# amount =200.5
-# output = root
-# output = type(root)
+# amount =20.5
+# output = amount
+# output = type(amount)
+
+#Numbers: COMPLEX -> complex()
+root = -2j
+output = root
+output = type(root)
+
+#type conversion
+numberTwo =10 
+output = type(numberTwo)
+output = numberTwo # variabl eoverriding
+numberTwo = float(numberTwo)
+output =  float(numberTwo) #parsing numberTwo variable into a floating point number
+output =  type(numberTwo)
+output =  int(numberTwo)
+output =  float(output)
+
+output =  "120"
+output =  type(output)
+output =  int("120")
+output =  type(output)
+
 
 #Text: STRINGS -> str()
 name = "John Doe"
 name = 'John Doe'
+welcomeMessage = 'It\'s a sunny morning'
 welcomeMessage = "It's a sunny morning"
 
 
@@ -48,31 +70,34 @@ output = name [4]
 #slicing 
 output  = name [1:12]
 output  = name [1:6:2]
-output  = name.upper()
-output  = name.lower()
-output  = name.startswith("b")
-output  = name.split(" ")
 output = name
-output  = name.replace("e", "u")
-output  = name.replace("u", "e")
-output  = name.replace("Peter", "Jane")
+
+#string methods
+output  = name.upper() # changes to uppercase
+output  = name.lower() # changes to lowercase
+output  = name.startswith("b") #checks whether the first element is matching the target  
+output  = name.split(" ") #splits string using the space as the determinant
+output = name
+output  = name.replace("e", "u") #replaces all the occurence of the character 'e' with 'u'
+output  = name.replace("u", "e") #replaces all the occurence of the character 'u' with 'e'
+output  = name.replace("Peter", "Jane") #replaces all the occurence of the word  'Peter' with 'Jane'
 
 
 #operators and operands
 
 """
 -Arithmetic operators
-addition (+)
-Subtraction(-)
-Multiplication(*)
-power(**)
-division(/)
-floor division (//)
-modulus (%)
+    addition (+)
+    Subtraction(-)
+    Multiplication(*)
+    power(**)
+    division(/)
+    floor division (//)
+    modulus (%)
 -boolean operators(and. or, not)
--bitwise operator
+-bitwise operator (&,|)
 -assignment operators
--comparison operators
+-comparison operators (less than, equal to, greater than, less than or equal to, greater than or equal to )
 -membership operator
 
 """
@@ -92,7 +117,7 @@ output = numberOne // numberTwo #TRUNCATION
 output = numberOne % numberTwo #remeinder
 
 #operation = input("Enter math operation: ")
-#output = eval(operation)
+#output = eval(operation) # th
 
 #Comparison operator(>, >=, <, <=, ==, !=)
 x=10
@@ -207,14 +232,15 @@ while(start<=end ):
     start +=1 
 print("=======================")
 
-name = " Peter Parker"
+name = " Peter Parker" # iist of characters
 
 for i in name:
     if (i == "r"):
-        continue #skip 
+        continue #skip  #break- doesn't continue
     #print(i)
 
-for num in range
+#for num in range(3,10):
+    #print(num)
 
 
 
